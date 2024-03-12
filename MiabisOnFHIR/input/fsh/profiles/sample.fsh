@@ -13,7 +13,7 @@ Description: "Sample is a portion or quantity of biological material that is col
 * collection.collectedDateTime 0..1
 * type ^short = "Sample type"
 * type ^definition = "The type of biological specimen intended for testing diagnostics, disease propagation, treatment, or for research purposes."
-* type from materialTypeVS
+* type from MaterialTypeVS
 * type 1..1
 * collection.bodySite.coding obeys specimenOntologyInvariant
 * collection.bodySite.coding.system ^definition = "Name of ontology used for describing the anatomical source of the sample material, for example, ICD-O-3 topography code"
@@ -22,3 +22,4 @@ Description: "Sample is a portion or quantity of biological material that is col
 * collection.bodySite.coding.display ^definition = "Description from the selected anatomical site ontology code"
 * extension contains SampleStorageTemperatureExtension named storageTemperature 0..1 and
     SampleDiagnosisExtension named diagnosis 0..
+* subject only Reference(Donor)
