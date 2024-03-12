@@ -1,4 +1,4 @@
-CodeSystem: materialTypeCS
+CodeSystem: MaterialTypeCS
 Id: miabis-material-type-CS
 Title: "MIABIS Material Type Code System"
 Description: "Codes for the material type of a sample"
