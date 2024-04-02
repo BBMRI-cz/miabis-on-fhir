@@ -13,6 +13,6 @@ Description: "This profile represents a condition, which is linked to sample and
 * subject ^short = "Linked Donor"
 * subject ^definition = "Donor which is linked to the condition" 
 * stage.assessment only Reference(DiagnosticReport)
-* stage.assessment 1..1 MS
+* stage.assessment 1.. MS
 * stage.assessment ^short = "Diagnostic Report"
 * stage.assessment ^definition = "Diagnostic Report which contains the icd-10 code of the diagnosis"
