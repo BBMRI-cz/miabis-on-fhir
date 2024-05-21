@@ -8,8 +8,7 @@ Description: "Sample donor is a person who is a source of either a biological ma
 * identifier ^short = "Sample Donor ID"
 * identifier ^definition = "Unique ID code of the sample donor within the sample collection/biobank"
 
-* gender only code 
-* gender from SexVS 
+
 * gender 1..1 MS
 * gender ^short = "Sex of the sample donor" 
 * gender ^definition = "Biological sex of the sample donor."

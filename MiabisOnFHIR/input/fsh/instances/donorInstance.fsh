@@ -5,6 +5,6 @@ Title: "Example Donor"
 Description: "Example instance of a Donor"
 
 * identifier.value = "1"
-* gender = #Male
+* gender = #male
 * birthDate = 1980-01-01
 * extension[datasetType].valueCode = #BiologicalSamples

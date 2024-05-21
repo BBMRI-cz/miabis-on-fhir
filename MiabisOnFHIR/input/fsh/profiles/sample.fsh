@@ -19,12 +19,12 @@ Description: "Sample is a portion or quantity of biological material that is col
 * type ^short = "Sample type"
 * type ^definition = "The type of biological specimen intended for testing diagnostics, disease propagation, treatment, or for research purposes."
 
-* collection.bodySite.coding obeys SpecimenOntologyInvariant
-* collection.bodySite.coding 0..1 MS 
-* collection.bodySite.coding.system ^definition = "Name of ontology used for describing the anatomical source of the sample material, for example, ICD-O-3 topography code"
-* collection.bodySite.coding.version ^definition = "Version of the ontology used for describing the anatomical source of the sample material"
-* collection.bodySite.coding.code ^definition = "Anatomical site code from the selected anatomical site ontology version"
-* collection.bodySite.coding.display ^definition = "Description from the selected anatomical site ontology code"
+// * collection.bodySite.coding obeys SpecimenOntologyInvariant
+// * collection.bodySite.coding 0..1 MS 
+// * collection.bodySite.coding.system ^definition = "Name of ontology used for describing the anatomical source of the sample material, for example, ICD-O-3 topography code"
+// * collection.bodySite.coding.version ^definition = "Version of the ontology used for describing the anatomical source of the sample material"
+// * collection.bodySite.coding.code ^definition = "Anatomical site code from the selected anatomical site ontology version"
+// * collection.bodySite.coding.display ^definition = "Description from the selected anatomical site ontology code"
 
 * subject only Reference(Donor) 
 * subject 1..1 MS
