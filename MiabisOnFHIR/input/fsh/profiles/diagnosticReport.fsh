@@ -13,6 +13,3 @@ Description: "provides information about the diagnosis linked to sample"
 * specimen ^short = "Linked Sample"
 * specimen ^definition = "Sample which is linked to this specific diagnosis"
 
-* result only Reference(MiabisObservation)
-* result 0.. MS
-* status = #final

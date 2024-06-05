@@ -17,8 +17,8 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 * name ^short = "Name of the biobank (preferably in English)."
 * alias 0..1 MS
 * alias ^short = "Short name in use for the biobank. If applicable."
-* description 0..1 MS
-* description ^short = "Description of the biobank in English."
+// * description 0..1 MS
+// * description ^short = "Description of the biobank in English."
 
 * contact ^slicing.discriminator.type = #pattern
 * contact ^slicing.discriminator.path = "purpose"

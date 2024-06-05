@@ -9,10 +9,8 @@ Description: "Collection represents a set of samples and/or data items collected
 * identifier ^short = "ID of the collection."
 * name 1..1 MS
 * name ^short = "Name of the collection (preferably in English)."
-* description 0..1 MS
-* description ^short = "Description of the collection in English."
 
-* type = #specimen
+* type = #person
 * active 0..1 MS
 * active ^short = "The state of the collection functions."
 * characteristic ^slicing.discriminator.type = #pattern
@@ -68,7 +66,9 @@ Description: "Collection represents a set of samples and/or data items collected
     UseAndAccessConditionsExtension named useAndAccessConditions 0..* MS and
     NumberOfSubjectsExtension named numberOfSubjects 0..1 MS and
     InclusionCriteriaExtension named inclusionCriteria 0..* MS and
-    PublicationsExtension named publications 0..* MS 
+    PublicationsExtension named publications 0..* MS and
+    CollectionDescriptionExtension named description 0..1 MS
+
 
 * extension[datasetType] ^short = "Types of datasets (groups of related data) obtained or otherwise derived from donors or their specimens."
 * extension[sampleSource] ^short = "The source from which the samples were collected or isolated."
@@ -76,6 +76,7 @@ Description: "Collection represents a set of samples and/or data items collected
 * extension[collectionDesign] ^short = "The overall design of the collection that explains how the collection was/is built up."
 * extension[useAndAccessConditions] ^short = "The conditions that may change the availability of the samples/data in the collection."
 * extension[numberOfSubjects] ^short = "Total number of subjects included in the collection."
-* extension[inclusionCriteria] ^short = "TInformation on type of parameters that determine which subjects will become collection participants."
+* extension[inclusionCriteria] ^short = "Information on type of parameters that determine which subjects will become collection participants."
 * extension[publications] ^short = "key publications produced in the collection (provide DOI, if possible)."
+* extension[description] ^short = "Description of the collection in English."
 
