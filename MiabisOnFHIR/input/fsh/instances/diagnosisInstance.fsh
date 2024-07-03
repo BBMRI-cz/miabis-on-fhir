@@ -1,5 +1,5 @@
 Instance: DiagnosisInstance
-InstanceOf: MiabisDiagnosisReport
+InstanceOf: DiagnosisReport
 Usage: #example
 Title: "Example Diagnosis Report"
 Description: "example of a diagnosis report"

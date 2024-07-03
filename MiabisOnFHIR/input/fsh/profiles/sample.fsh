@@ -38,5 +38,5 @@ Description: "Sample is a portion or quantity of biological material that is col
 * note.text ^short = "actual use restrictions"
 * note.text ^definition = "acual text of the restrictions that may change the availability of the samples donated by the sample donor"
 
-* extension contains SampleStorageTemperatureExtension named storageTemperature 0..1 MS
+* processing.extension contains SampleStorageTemperatureExtension named storageTemperature 0..1 MS
     // and SampleDiagnosisExtension named diagnosis 0..

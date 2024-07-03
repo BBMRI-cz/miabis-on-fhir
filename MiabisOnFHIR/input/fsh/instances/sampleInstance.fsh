@@ -9,4 +9,4 @@ Description: "example of a sample instance"
 * type = MaterialTypeCS#DNA
 * subject.reference = "Donor/1"
 * note.text = "This is a restriction of sample usage"
-* extension[storageTemperature].valueCode = #RT
+* processing.extension[storageTemperature].valueCode = #RT

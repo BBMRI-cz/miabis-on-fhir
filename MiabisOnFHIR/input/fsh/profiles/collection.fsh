@@ -1,7 +1,7 @@
 Profile: Collection
 Parent: Group
 Id: miabis-collection
-Title: "MiabisCollection"
+Title: "Collection"
 Description: "Collection represents a set of samples and/or data items collected and/or derived in a common context and stored under a common stewardship and available for future research"
 
 //  TODO: Acronym, Url,
@@ -55,7 +55,7 @@ Description: "Collection represents a set of samples and/or data items collected
 * characteristic[diagnosis].value[x] from http://hl7.org/fhir/ValueSet/icd-10
 
 * managingEntity 1..1 MS
-* managingEntity only Reference(ManagingPerson)
+* managingEntity only Reference(Biobank)
 * managingEntity ^short = "The person or organization responsible for the collection and his contact information."
 
 * extension contains 

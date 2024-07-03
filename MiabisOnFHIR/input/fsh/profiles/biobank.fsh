@@ -20,13 +20,13 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 // * description 0..1 MS
 // * description ^short = "Description of the biobank in English."
 
-* contact ^slicing.discriminator.type = #pattern
-* contact ^slicing.discriminator.path = "purpose"
-* contact ^slicing.rules = #open
-* contact ^short = "Contact information for the contact person/person responsible of the biobank."
+// * contact ^slicing.discriminator.type = #pattern
+// * contact ^slicing.discriminator.path = "purpose"
+// * contact ^slicing.rules = #open
+// * contact ^short = "Contact information for the contact person/person responsible of the biobank."
 
 
-* contact.purpose = ContactTypeCS#Research
+// * contact.purpose = ContactTypeCS#Research
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
 
