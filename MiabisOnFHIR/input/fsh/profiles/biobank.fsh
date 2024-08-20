@@ -1,6 +1,6 @@
 Profile: Biobank
 Parent: Organization
-Id: MIABIS-Biobank
+Id: miabis-biobank
 Title: "Biobank"
 Description: "This profile represents a Biobank, which is defined as an entity that stores samples and data related to the samples."
 
@@ -41,9 +41,11 @@ Description: "This profile represents a Biobank, which is defined as an entity t
     InfrastructuralCapabilitiesExtension named infrastructuralCapabilities 0..* MS and
     OrganisationalCapabilitiesExtension named organisationalCapabilities 0..* MS and
     BioprocessingAndAnalyticalCapabilitiesExtension named bioprocessingAndAnalyticalCapabilities 0..* MS and
-    QualityManagementStandardExtension named qualityManagementStandard 0..* MS 
+    QualityManagementStandardExtension named qualityManagementStandard 0..* MS and
+    JuristicPersonExtension named juristicPerson 0..1 MS 
 
 * extension[infrastructuralCapabilities] ^short = "The technical infrastructural capabilities that the biobank can offer to the clients."
 * extension[organisationalCapabilities] ^short = "The organisational capabilities and services that the biobank can provide to support clients."
 * extension[bioprocessingAndAnalyticalCapabilities] ^short = "The bioprocessing and analytical services that the biobank can offer to the clients."
 * extension[qualityManagementStandard] ^short = "The standards that the biobank is certified or accredited for."
+* extension[juristicPerson] ^short = "The legal entity that is responsible for the biobank."

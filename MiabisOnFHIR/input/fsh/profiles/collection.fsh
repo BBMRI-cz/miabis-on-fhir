@@ -55,28 +55,15 @@ Description: "Collection represents a set of samples and/or data items collected
 * characteristic[diagnosis].value[x] from http://hl7.org/fhir/ValueSet/icd-10
 
 * managingEntity 1..1 MS
-* managingEntity only Reference(Biobank)
-* managingEntity ^short = "The person or organization responsible for the collection and his contact information."
+* managingEntity only Reference(CollectionOrganization)
+* managingEntity ^short = "Organization resource containing details of this collection, such as contact information, publications, etc."
 
 * extension contains 
-    CollectionDatasetTypeExtension named datasetType 0..1 MS and
-    SampleSourceExtension named sampleSource 0..1 MS and
-    SampleCollectionSettingExtension named sampleCollectionSetting 0..1 MS and
-    CollectionDesignExtension named collectionDesign 0..* MS and
-    UseAndAccessConditionsExtension named useAndAccessConditions 0..* MS and
     NumberOfSubjectsExtension named numberOfSubjects 0..1 MS and
-    InclusionCriteriaExtension named inclusionCriteria 0..* MS and
-    PublicationsExtension named publications 0..* MS and
-    CollectionDescriptionExtension named description 0..1 MS
+    InclusionCriteriaExtension named inclusionCriteria 0..* MS 
 
 
-* extension[datasetType] ^short = "Types of datasets (groups of related data) obtained or otherwise derived from donors or their specimens."
-* extension[sampleSource] ^short = "The source from which the samples were collected or isolated."
-* extension[sampleCollectionSetting] ^short = "The context in which the sample collection was/is conducted."
-* extension[collectionDesign] ^short = "The overall design of the collection that explains how the collection was/is built up."
-* extension[useAndAccessConditions] ^short = "The conditions that may change the availability of the samples/data in the collection."
 * extension[numberOfSubjects] ^short = "Total number of subjects included in the collection."
 * extension[inclusionCriteria] ^short = "Information on type of parameters that determine which subjects will become collection participants."
-* extension[publications] ^short = "key publications produced in the collection (provide DOI, if possible)."
-* extension[description] ^short = "Description of the collection in English."
+
 
