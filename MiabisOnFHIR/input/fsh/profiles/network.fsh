@@ -12,5 +12,6 @@ Description: "This resource represents a group of interconnected biobanks, colle
 * type = #person
 * active 0..1 MS
 * active ^short = "The state of the collection functions."
-
+* managingEntity 1..1 MS 
+* managingEntity only Reference(NetworkOrganization)
 * extension contains CommonCollaborationTopicsExtension named commonCollaborationTopics 0..1 MS
