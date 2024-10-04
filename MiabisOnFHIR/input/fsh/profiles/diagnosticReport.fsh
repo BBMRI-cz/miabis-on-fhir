@@ -8,6 +8,8 @@ Description: "provides information about the diagnosis linked to sample"
 * identifier ^short = "ID of Condition"
 * identifier ^definition = "A unique identifier for the condition."
 
+* status = #final
+
 * specimen only Reference(Sample)
 * specimen 0..1 MS 
 * specimen ^short = "Linked Sample"

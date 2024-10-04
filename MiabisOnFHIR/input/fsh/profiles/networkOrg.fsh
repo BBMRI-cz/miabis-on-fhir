@@ -19,8 +19,13 @@ Description: "Network Organization represent a formal part of a network member, 
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
 * contact.telecom 1..* 
-* contact.address 1..1 MS
-* contact.address.country 1..1 MS
+
+* address 1..1 MS
+* address ^short = "Address of the network."
+* address ^definition = "The address of the network."
+* address.country 1..1 MS
+* address.country ^short = "Country of the network."
+* address.country ^definition = "The country of the network."
 
 * partOf 1..1 MS 
 * partOf only Reference(Biobank)
