@@ -13,7 +13,7 @@ Description: "Collection represents a set of samples and/or data items collected
 * type = #person
 * active 0..1 MS
 * active ^short = "The state of the collection functions."
-* characteristic ^slicing.discriminator.type = #pattern
+* characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "code"
 * characteristic ^slicing.rules = #open
 
@@ -30,29 +30,34 @@ Description: "Collection represents a set of samples and/or data items collected
 * characteristic[materialType] ^short = "The biospecimen saved from a biological entity for propagation e.g. testing, diagnostics, treatment or research purposes."
 * characteristic[diagnosis] ^short = "The diagnosis of the individuals in the collection."
 
-* characteristic[ageRange].code from CharacteristicVS
-* characteristic[ageRange].code.coding.code = CharacteristicCS#Age
+// * characteristic[ageRange].code from CharacteristicVS
+* characteristic[ageRange].code = CharacteristicCS#Age
+// * characteristic[ageRange].code.coding.code = CharacteristicCS#Age
 * characteristic[ageRange].value[x] only Range
 
-* characteristic[sex].code from CharacteristicVS
-* characteristic[sex].code.coding.code = CharacteristicCS#Sex
+// * characteristic[sex].code from CharacteristicVS
+* characteristic[sex].code = CharacteristicCS#Sex
+// * characteristic[sex].code.coding.code = CharacteristicCS#Sex
 * characteristic[sex].value[x] only CodeableConcept
-* characteristic[sex].value[x] from SexVS
+* characteristic[sex].value[x] from http://hl7.org/fhir/ValueSet/administrative-gender
 
-* characteristic[storageTemperature].code from CharacteristicVS
-* characteristic[storageTemperature].code.coding.code = CharacteristicCS#StorageTemperature
+// * characteristic[storageTemperature].code from CharacteristicVS
+* characteristic[storageTemperature].code = CharacteristicCS#StorageTemperature
+// * characteristic[storageTemperature].code.coding.code = CharacteristicCS#StorageTemperature
 * characteristic[storageTemperature].value[x] only CodeableConcept
 * characteristic[storageTemperature].value[x] from StorageTemperatureVS
 
-* characteristic[materialType].code from CharacteristicVS
-* characteristic[materialType].code.coding.code = CharacteristicCS#MaterialType
+// * characteristic[materialType].code from CharacteristicVS
+* characteristic[materialType].code = CharacteristicCS#MaterialType
+// * characteristic[materialType].code.coding.code = CharacteristicCS#MaterialType
 * characteristic[materialType].value[x] only CodeableConcept
 * characteristic[materialType].value[x] from MaterialTypeVS
 
-* characteristic[diagnosis].code from CharacteristicVS
-* characteristic[diagnosis].code.coding.code = CharacteristicCS#Diagnosis
+// * characteristic[diagnosis].code from CharacteristicVS
+* characteristic[diagnosis].code = CharacteristicCS#Diagnosis
+// * characteristic[diagnosis].code.coding.code = CharacteristicCS#Diagnosis
 * characteristic[diagnosis].value[x] only CodeableConcept
-* characteristic[diagnosis].value[x] from http://hl7.org/fhir/ValueSet/icd-10
+* characteristic[diagnosis].value[x] from DiagnosisVS
 
 * managingEntity 1..1 MS
 * managingEntity only Reference(CollectionOrganization)
@@ -60,8 +65,10 @@ Description: "Collection represents a set of samples and/or data items collected
 
 * extension contains 
     NumberOfSubjectsExtension named numberOfSubjects 0..1 MS and
-    InclusionCriteriaExtension named inclusionCriteria 0..* MS 
+    InclusionCriteriaExtension named inclusionCriteria 0..* MS and
+    http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.member.entity named MemberEntity 0..* MS
 
+* extension[MemberEntity].value[x] only Reference(Specimen)
 
 * extension[numberOfSubjects] ^short = "Total number of subjects included in the collection."
 * extension[inclusionCriteria] ^short = "Information on type of parameters that determine which subjects will become collection participants."

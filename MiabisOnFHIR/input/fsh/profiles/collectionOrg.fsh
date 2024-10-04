@@ -19,8 +19,13 @@ Description: "Collection Organization represent a formal part of a organization,
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
 * contact.telecom 1..* 
-* contact.address 1..1 MS
-* contact.address.country 1..1 MS
+
+
+* address 1..1 MS
+* address ^short = "Address of the collection."
+* address.country 1..1 MS
+* address.country ^short = "Country of the collection."
+
 
 * partOf 1..1 MS 
 * partOf only Reference(Biobank)

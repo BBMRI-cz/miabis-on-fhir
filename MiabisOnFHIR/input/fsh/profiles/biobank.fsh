@@ -32,7 +32,12 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 
 * contact.telecom 1..*
 
-* contact.address 1..1 MS
+// * contact.address 1..1 MS
+* address 1..1 MS
+* address ^short = "Address of the biobank."
+* address ^definition = "The address of the biobank."
+* address.country 1..1 MS
+* address.country ^short = "Country of the biobank."
 
 * contact.address.country 1..1 MS
 // * contact[forschungskontakt].address only http://fhir.de/StructureDefinition/address-de-basis

@@ -4,7 +4,7 @@ Usage: #example
 Title: "Example Donor"
 Description: "Example instance of a Donor"
 
-* identifier.value = "1"
+* identifier.value = "donorId"
 * gender = #male
-* birthDate = 1980-01-01
+* birthDate = 1980-01-01 
 * extension[datasetType].valueCode = #BiologicalSamples

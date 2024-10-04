@@ -13,7 +13,7 @@ Description: "This profile represents a condition, which is linked to sample and
 * subject ^short = "Linked Donor"
 * subject ^definition = "Donor which is linked to the condition" 
 
-* code 1..1 MS
+* code 0..1 MS
 * code ^short = "ICD-10 Code representing diagnosis of the patient."
 * code ^definition = "The ICD-10 code of the condition. This code is used to represent only the diagnosis of the patient. It is not used to represent the condition of the sample. For the condition of the sample, use the stage.assessment element."
 * code from http://hl7.org/fhir/ValueSet/icd-10

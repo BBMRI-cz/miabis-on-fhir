@@ -13,4 +13,7 @@ Files which contain source code for FHIR profiles are Located inside folder [Mia
 2. move to MiabisOnFHIR folder : ```cd MiabisOnFHIR```
 3. use sushi to generate JSON files from provided files inside the fsh folder. ```sushi build```
 4. if the build was successfull, generated files are located inside the `MiabisOnFHIR/fsh-generated/` folder.
+5. in order to validate the instances based on this IG, you need to download [FHIR validator](https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator) 
+6. in order to validate the example instances, move your generated ```*instance.json``` files to separate folder, and run command ```java -jar validator_cli.jar -ig {fsh_generated_resources} -version 4.0.1 -extension http://example/org/ -allow-example-urls true  {instances}```
+
 
