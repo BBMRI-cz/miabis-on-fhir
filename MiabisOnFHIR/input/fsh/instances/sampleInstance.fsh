@@ -4,9 +4,9 @@ Usage: #example
 Title: "SampleInstance"
 Description: "example of a sample instance"
 
-* identifier.value = "1"
+* identifier.value = "sampleId"
 * collection.collectedDateTime = "2011-04-05T13:00:00Z"
 * type = MaterialTypeCS#DNA
-* subject.reference = "Donor/1"
+* subject = Reference("Donor/donorId")
 * note.text = "This is a restriction of sample usage"
-* processing.extension[storageTemperature].valueCode = #RT
+* processing.extension[storageTemperature].valueCodeableConcept = StorageTemperatureCS#RT
