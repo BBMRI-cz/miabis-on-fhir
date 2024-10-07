@@ -5,7 +5,7 @@ Title: "Example Diagnosis Report"
 Description: "example of a diagnosis report"
 
 * identifier.value = "diagnosisId"
-* specimen = Reference("Sample/sampleId")
+* specimen = Reference(Specimen/sampleId)
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #52797-8
 * result[+].reference = "Observation/observationId"

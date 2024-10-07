@@ -4,8 +4,8 @@ Usage: #example
 Title: "BiobankInstance"
 Description: "Example instance of a Biobank"
 
-* identifier.value = "biobankId"
-* identifier.system = "http://www.bbmri-eric.eu"
+* identifier[bbmri-eric-id].value = "biobankId"
+// * identifier.system = "http://www.bbmri-eric.eu"
 * name = "biobankName"
 * alias = "biobankAlias" 
 * contact[+].name.given[+] = "contactName"
@@ -20,4 +20,5 @@ Description: "Example instance of a Biobank"
 * extension[bioprocessingAndAnalyticalCapabilities].valueCodeableConcept = BioprocessingAndAnalyticalCapabilitiesCS#Other
 * extension[qualityManagementStandard].valueString = "ISO 9001"
 * extension[juristicPerson].valueString = "juristicPerson"
+* extension[description].valueString = "descriptionExample"
 

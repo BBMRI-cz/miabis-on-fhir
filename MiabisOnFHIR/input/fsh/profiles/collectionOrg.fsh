@@ -40,7 +40,7 @@ Description: "Collection Organization represent a formal part of a organization,
     CollectionDesignExtension named collectionDesign 0..* MS and
     UseAndAccessConditionsExtension named useAndAccessConditions 0..* MS and
     PublicationsExtension named publications 0..* MS and
-    CollectionDescriptionExtension named description 0..1 MS 
+    OrganizationDescriptionExtension named description 0..1 MS 
 
 
 * extension[datasetType] ^short = "Types of datasets (groups of related data) obtained or otherwise derived from donors or their specimens."

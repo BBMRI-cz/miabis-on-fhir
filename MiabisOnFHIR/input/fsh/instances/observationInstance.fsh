@@ -8,6 +8,8 @@ Description: "Example instance of an Observation"
 * valueCodeableConcept = http://hl7.org/fhir/sid/icd-10#A01
 // * valueCodeableConcept.coding[+].system = "http://hl7.org/fhir/sid/icd-10"
 // * valueCodeableConcept = http://hl7.org/fhir/sid/icd-10#A01
+* effectiveDateTime = "2020-01-01"
+* subject = Reference(Patient/donorId)
 * status = #final
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #52797-8

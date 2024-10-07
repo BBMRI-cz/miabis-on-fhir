@@ -51,7 +51,7 @@ Description: "example of a collection instance"
 // * characteristic[=].valueCodeableConcept.coding[+].system = "http://hl7.org/fhir/ValueSet/icd-10"
 // * characteristic[=].valueCodeableConcept.coding[=].code = #C50
 
-* managingEntity = Reference("CollectionOrganization/collectionOrgId")
+* managingEntity = Reference(Organization/collectionOrgId)
 
 * extension[numberOfSubjects].valueInteger = 100
 * extension[inclusionCriteria].valueCodeableConcept = InclusionCriteriaCS#HealthStatus
