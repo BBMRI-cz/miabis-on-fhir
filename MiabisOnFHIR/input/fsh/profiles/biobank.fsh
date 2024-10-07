@@ -20,8 +20,20 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
+* contact.telecom 1..* MS 
 
-* contact.telecom 1..*
+* telecom 0..1 MS
+* telecom ^short = "Complete http-address for the collection."
+* telecom.system = #url
+* telecom.value 0..1 MS
+* telecom.value ^short = "URL of the collection."
+
+
+* telecom 0..1 MS
+* telecom ^short = "Complete http-address for the collection."
+* telecom.system = #url
+* telecom.value 0..1 MS
+* telecom.value ^short = "URL of the collection."
 
 
 * address 1..1 MS
