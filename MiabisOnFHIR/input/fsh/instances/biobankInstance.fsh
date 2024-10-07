@@ -5,7 +5,7 @@ Title: "BiobankInstance"
 Description: "Example instance of a Biobank"
 
 * identifier[bbmri-eric-id].value = "biobankId"
-// * identifier.system = "http://www.bbmri-eric.eu"
+
 * name = "biobankName"
 * alias = "biobankAlias" 
 * contact[+].name.given[+] = "contactName"

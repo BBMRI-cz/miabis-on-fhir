@@ -19,8 +19,4 @@ Description: "example of a network organization instance"
 * extension[juristicPerson].valueString = "juristicPerson"
 * extension[commonCollaborationTopics].valueCodeableConcept = CommonCollaborationTopicsCS#Charter
 * extension[description].valueString = "descriptionExample"
-// * extension[+].url =  "http://example.org/StructureDefinition/miabis-juristic-person-extension"
-// * extension[=].valueString = "juristicPerson"
-// * extension[+].url = "http://example.org/StructureDefinition/miabis-common-collaboration-topics-extension"
-// * extension[=].valueCodeableConcept.coding[+].system = "http://example.org/ValueSet/miabis-common-collaboration-topics-vs"
-// * extension[=].valueCodeableConcept.coding[=].code = CommonCollaborationTopicsCS#Other
+
