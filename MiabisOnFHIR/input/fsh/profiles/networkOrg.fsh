@@ -33,7 +33,9 @@ Description: "Network Organization represent a formal part of a network member, 
  
 * extension contains 
     JuristicPersonExtension named juristicPerson 0..1 MS and
-    CommonCollaborationTopicsExtension named commonCollaborationTopics 0..* MS
+    CommonCollaborationTopicsExtension named commonCollaborationTopics 0..* MS and
+    OrganizationDescriptionExtension named description 0..1 MS
 
 * extension[juristicPerson] ^short = "Juristic person i.e. a university, concern, country council, etc. for the network"
 * extension[commonCollaborationTopics] ^short = "Common collaboration topics for the network."
+* extension[description] ^short = "Description of the network in English."

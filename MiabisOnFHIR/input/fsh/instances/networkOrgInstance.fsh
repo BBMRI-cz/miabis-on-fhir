@@ -15,11 +15,8 @@ Description: "example of a network organization instance"
 * contact[=].telecom[=].value = "contactEmail"
 
 * address[+].country = "CZ"
-* partOf = Reference("Biobank/biobankId")
+* partOf = Reference(Organization/biobankId)
 * extension[juristicPerson].valueString = "juristicPerson"
 * extension[commonCollaborationTopics].valueCodeableConcept = CommonCollaborationTopicsCS#Charter
-// * extension[+].url =  "http://example.org/StructureDefinition/miabis-juristic-person-extension"
-// * extension[=].valueString = "juristicPerson"
-// * extension[+].url = "http://example.org/StructureDefinition/miabis-common-collaboration-topics-extension"
-// * extension[=].valueCodeableConcept.coding[+].system = "http://example.org/ValueSet/miabis-common-collaboration-topics-vs"
-// * extension[=].valueCodeableConcept.coding[=].code = CommonCollaborationTopicsCS#Other
+* extension[description].valueString = "descriptionExample"
+
