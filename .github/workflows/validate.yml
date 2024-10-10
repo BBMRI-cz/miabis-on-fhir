@@ -33,9 +33,10 @@ jobs:
         run: |
           mkdir sushi-output 
           mkdir sushi-output/instances
-          cp -R MiabisOnFHIR/fsh-generated/resources sushi-output
+          mkdir sushi-output/resources
+          cp -R MiabisOnFHIR/fsh-generated/resources sushi-output/resources
           cd sushi-output
-          ls 
+          ls -l
           cd sushi-output/resources
           mv *Instance.json sushi-output/instances
 
