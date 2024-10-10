@@ -15,6 +15,9 @@ Description: "Network Organization represent a formal part of a network member, 
 * telecom.system = #url
 * telecom.value 0..1 MS
 * telecom.value ^short = "URL of the collection."
+* active 0..1 MS
+* active ^short = "The state of the network functions."
+* active ^definition = "The state of the network functions."
 
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
@@ -32,7 +35,7 @@ Description: "Network Organization represent a formal part of a network member, 
 * partOf ^short = "The organization that the collection is part of."
  
 * extension contains 
-    JuristicPersonExtension named juristicPerson 0..1 MS and
+    JuristicPersonExtension named juristicPerson 1..1 MS and
     CommonCollaborationTopicsExtension named commonCollaborationTopics 0..* MS and
     OrganizationDescriptionExtension named description 0..1 MS
 

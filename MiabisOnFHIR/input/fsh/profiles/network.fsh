@@ -10,6 +10,7 @@ Description: "This resource represents a group of interconnected biobanks, colle
 * name ^short = "Name of the collection (preferably in English)."
 
 * type = #person
+* type ^short = "The type of resources this group contains. For this resource type, this is always set to person. (should be organization, but this is only supported in R5)"
 * active 0..1 MS
 * active ^short = "The state of the collection functions."
 * managingEntity 1..1 MS 

@@ -4,7 +4,7 @@ Id: miabis-condition
 Title: "Condition"
 Description: "This profile represents a condition, which is linked to sample and donor. It is used to describe diagnosis of the donor and his/her sample."
 
-* identifier 1..1 MS
+* identifier 0..1 MS
 * identifier ^short = "ID of Condition"
 * identifier ^definition = "A unique identifier for the condition."
 

@@ -19,7 +19,9 @@ Description: "Collection Organization represent a formal part of a organization,
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
 * contact.telecom 1..* 
-
+* active 0..1 MS 
+* active ^short = "The state of the collection functions."
+* active ^definition = "The state of the collection functions."
 
 * address 1..1 MS
 * address ^short = "Address of the collection."
@@ -40,7 +42,7 @@ Description: "Collection Organization represent a formal part of a organization,
     CollectionDesignExtension named collectionDesign 0..* MS and
     UseAndAccessConditionsExtension named useAndAccessConditions 0..* MS and
     PublicationsExtension named publications 0..* MS and
-    OrganizationDescriptionExtension named description 0..1 MS 
+    OrganizationDescriptionExtension named description 1..1 MS 
 
 
 * extension[datasetType] ^short = "Types of datasets (groups of related data) obtained or otherwise derived from donors or their specimens."
