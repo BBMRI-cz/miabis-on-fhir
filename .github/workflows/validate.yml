@@ -33,8 +33,8 @@ jobs:
         run: |
           mkdir sushi-output 
           mkdir sushi-output/instances
-          cp -R MiabisOnFHIR/fsh-generated/resources /sushi-output
-          mv sushi-output/*Instance.json /sushi-output/instances
+          cp -R MiabisOnFHIR/fsh-generated/resources sushi-output
+          mv sushi-output/*Instance.json sushi-output/instances
 
       - name: Download FHIR validator
         run: wget -g https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator.jar
