@@ -35,6 +35,7 @@ jobs:
           mkdir sushi-output/instances
           mkdir sushi-output/resources
           cp -R MiabisOnFHIR/fsh-generated/resources sushi-output
+          ls /sushi-output/resources
           mv /sushi-output/resources/*Instance.json /sushi-output/instances
 
       - name: Download FHIR validator
