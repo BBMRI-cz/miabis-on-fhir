@@ -48,7 +48,7 @@ Description: "Collection represents a set of samples and/or data items collected
 
 * characteristic[materialType].code = CharacteristicCS#MaterialType
 * characteristic[materialType].value[x] only CodeableConcept
-* characteristic[materialType].value[x] from MaterialTypeVS
+* characteristic[materialType].value[x] from CollectionSampleTypeVS
 
 
 * characteristic[diagnosis].code = CharacteristicCS#Diagnosis
