@@ -11,6 +11,7 @@ Description: "Collection represents a set of samples and/or data items collected
 * name ^short = "Name of the collection (preferably in English)."
 
 * type = #person
+* type ^short = "The type of resources this group contains. For this resource type, this is always set to person. (should be specimen, but this is only supported in R5)"
 * active 0..1 MS
 * active ^short = "The state of the collection functions."
 * characteristic ^slicing.discriminator.type = #value
@@ -18,11 +19,11 @@ Description: "Collection represents a set of samples and/or data items collected
 * characteristic ^slicing.rules = #open
 
 * characteristic contains 
-    ageRange 1..1 MS and
+    ageRange 0..1 MS and
     sex 1..* MS and
-    storageTemperature 1..* MS and
+    storageTemperature 0..* MS and
     materialType 1..* MS and 
-    diagnosis 1..* MS 
+    diagnosis 0..* MS 
 
 * characteristic[ageRange] ^short = "Age of youngest and oldest sample donor at the time of sample donation."
 * characteristic[sex] ^short = "The sex of the individuals in the collection."
@@ -30,32 +31,27 @@ Description: "Collection represents a set of samples and/or data items collected
 * characteristic[materialType] ^short = "The biospecimen saved from a biological entity for propagation e.g. testing, diagnostics, treatment or research purposes."
 * characteristic[diagnosis] ^short = "The diagnosis of the individuals in the collection."
 
-// * characteristic[ageRange].code from CharacteristicVS
+
 * characteristic[ageRange].code = CharacteristicCS#Age
-// * characteristic[ageRange].code.coding.code = CharacteristicCS#Age
 * characteristic[ageRange].value[x] only Range
 
-// * characteristic[sex].code from CharacteristicVS
+
 * characteristic[sex].code = CharacteristicCS#Sex
-// * characteristic[sex].code.coding.code = CharacteristicCS#Sex
 * characteristic[sex].value[x] only CodeableConcept
 * characteristic[sex].value[x] from http://hl7.org/fhir/ValueSet/administrative-gender
 
-// * characteristic[storageTemperature].code from CharacteristicVS
+
 * characteristic[storageTemperature].code = CharacteristicCS#StorageTemperature
-// * characteristic[storageTemperature].code.coding.code = CharacteristicCS#StorageTemperature
 * characteristic[storageTemperature].value[x] only CodeableConcept
 * characteristic[storageTemperature].value[x] from StorageTemperatureVS
 
-// * characteristic[materialType].code from CharacteristicVS
+
 * characteristic[materialType].code = CharacteristicCS#MaterialType
-// * characteristic[materialType].code.coding.code = CharacteristicCS#MaterialType
 * characteristic[materialType].value[x] only CodeableConcept
 * characteristic[materialType].value[x] from MaterialTypeVS
 
-// * characteristic[diagnosis].code from CharacteristicVS
+
 * characteristic[diagnosis].code = CharacteristicCS#Diagnosis
-// * characteristic[diagnosis].code.coding.code = CharacteristicCS#Diagnosis
 * characteristic[diagnosis].value[x] only CodeableConcept
 * characteristic[diagnosis].value[x] from DiagnosisVS
 
