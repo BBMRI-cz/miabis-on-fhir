@@ -28,7 +28,7 @@ Description: "example of a collection instance"
 
 * characteristic[materialType].code = CharacteristicCS#MaterialType
 * characteristic[materialType].exclude = false
-* characteristic[materialType].valueCodeableConcept = MaterialTypeCS#RNA
+* characteristic[materialType].valueCodeableConcept = CollectionSampleTypeCS#RNA
 
 * characteristic[diagnosis].code = CharacteristicCS#Diagnosis
 * characteristic[diagnosis].exclude = false
