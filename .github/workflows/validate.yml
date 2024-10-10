@@ -1,0 +1,44 @@
+
+name: CI
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Install Sushi
+        run:  sudo npm install -g fsh-sushi
+        
+      - name: check out Git repository
+        uses: actions/checkout@v4
+
+      - name: cd to MiabisOnFHIR folder
+        run: cd MiabisOnFHIR 
+        
+      - name: Build resources using Sushi
+        run: sushi build 
+
+      - name: Move sushi output different folder
+        run: |
+          mkdir sushi-output 
+          mkdir sushi-output/instances
+          cp fsh-generated/resources /sushi-output
+          mv output/*Instance.json /sushi-output/instances
+
+      - name: Download FHIR validator
+        run: wget -g https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator.jar
+
+      - name: Run FHIR validator
+        run: java -jar validator_cli.jar -ig sushi-output/resources -version 4.0.1 -extension http://example/org/ -allow-example-urls true  sushi-output/instances
+
