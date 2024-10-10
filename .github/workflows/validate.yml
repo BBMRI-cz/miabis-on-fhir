@@ -39,7 +39,7 @@ jobs:
           mv *Instance.json ../instances
 
       - name: Download FHIR validator
-        run: wget -g https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator.jar
+        run: wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar -O validator.jar
 
       - name: Run FHIR validator
         run: java -jar validator_cli.jar -ig sushi-output/resources -version 4.0.1 -extension http://example/org/ -allow-example-urls true  sushi-output/instances
