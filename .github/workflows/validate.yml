@@ -28,7 +28,10 @@ jobs:
 
       - name: cd to MiabisOnFHIR folder
         run: cd MiabisOnFHIR 
-        
+      
+      - name: ls the directory
+        run: ls
+      
       - name: Build resources using Sushi
         run: sushi build 
 
