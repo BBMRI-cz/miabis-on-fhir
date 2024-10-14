@@ -3,7 +3,6 @@ Id: miabis-bioprocessing-and-analytical-capabilities-cs
 Title: "Bioprocessing and Analytical Capabilities Code System"
 Description: "Code system representing the bioprocessing and analytical services that the biobank can offer to the clients. "
 
-// Biochemical analyses, Genomics, Nucleic acid extraction, Proteomics, Metabolomics, Histology, Cell-lines processing, Virology, Sample processing, Sample shipping, Sample quality control services, Other
 * #BioChemAnalyses "Biochemical analyses"
 * #Genomics "Genomics"
 * #NucleicAcidExtraction "Nucleic acid extraction"
