@@ -3,7 +3,7 @@ Id: miabis-common-collaboration-topics-cs
 Title: "Common Collaboration Topics Code System"
 Description: "Codes describing topics that the network partners collaborate on"
 
-// Common charter, Common SOPs, Common data access policy, Common sample access, policy, Common MTA, Common image access policy, Common image MTA, Common representation, Common URL, Other.
+
 * #Charter "Common Charter"
 * #SOP "Common SOPs"
 * #DataAccessPolicy "Common data access policy"

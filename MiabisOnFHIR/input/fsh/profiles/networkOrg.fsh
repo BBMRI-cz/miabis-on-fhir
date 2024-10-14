@@ -14,7 +14,7 @@ Description: "Network Organization represent a formal part of a network member, 
 * telecom ^short = "Complete http-address for the network."
 * telecom.system = #url
 * telecom.value 0..1 MS
-* telecom.value ^short = "URL of the collection."
+* telecom.value ^short = "URL of the network."
 * active 0..1 MS
 * active ^short = "The state of the network functions."
 * active ^definition = "The state of the network functions."

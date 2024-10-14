@@ -2,7 +2,7 @@ CodeSystem: CollectionDatasetTypeCS
 Id: miabis-collection-dataset-typeCS
 Title: "MIABIS Collection Dataset Type"
 Description: "Codes describing the type of dataset that is part of a collection."
-// create these : Lifestyle dataset, Environmental dataset, Physiological dataset, Biochemical dataset, Clinical dataset, Psychological dataset, Genomic dataset, Proteomic dataset, Metabolomic dataset, Body (Radiological) image, Whole slide image, Photo image, Genealogical records, Other.
+
 * #Lifesyle "Lifestyle dataset"
 * #Environmental "Environmental dataset"
 * #Physiological "Physiological dataset"
