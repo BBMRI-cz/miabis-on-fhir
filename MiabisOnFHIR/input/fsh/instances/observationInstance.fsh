@@ -9,6 +9,7 @@ Description: "Example instance of an Observation"
 
 * effectiveDateTime = "2020-01-01"
 * subject = Reference(Patient/donorId)
+* specimen = Reference(Sample/sampleId)
 * status = #final
 * code.coding[+].system = "http://loinc.org"
 * code.coding[=].code = #52797-8

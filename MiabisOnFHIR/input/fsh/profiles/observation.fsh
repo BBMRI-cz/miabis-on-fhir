@@ -15,6 +15,9 @@ Description: "Observation containing ICD-10 code of diagnosis"
 * subject 1..1 MS
 * subject ^short = "Subject (donor) that the observation is about."
 * subject ^definition = "Subject (donor) that the observation is about."
+* specimen only Reference(Sample)
+* specimen 1..1 MS
+* specimen ^short = "Specimen used for this observation"
 * value[x] from DiagnosisVS
 * value[x] 1..1 MS
 * value[x]  ^short = "Diagnosis code"
