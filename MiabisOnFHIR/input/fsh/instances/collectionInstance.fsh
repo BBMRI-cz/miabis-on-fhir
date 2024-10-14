@@ -38,7 +38,7 @@ Description: "example of a collection instance"
 
 * extension[numberOfSubjects].valueInteger = 100
 * extension[inclusionCriteria].valueCodeableConcept = InclusionCriteriaCS#HealthStatus
-
+* extension[MemberEntity].valueReference = Reference(Specimen/sampleId)
 
 
 
