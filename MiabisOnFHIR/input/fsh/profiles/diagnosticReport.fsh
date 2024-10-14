@@ -13,7 +13,11 @@ Description: "Diagnosis Report provides information about the diagnosis linked t
 * specimen only Reference(Sample)
 * specimen 0..1 MS 
 * specimen ^short = "Linked Sample"
-* specimen ^definition = "Sample which is linked to this specific diagnosis"
+* specimen ^definition = "Sample which is linked to this diagnosis report"
+
+* subject only Reference(Donor)
+* subject 1..1 MS
+* subject ^short = "Donor which is linked to this Diagnostis report"
 
 * result only Reference(MiabisObservation)
 * result 0..* MS
