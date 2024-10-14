@@ -8,16 +8,16 @@ Description: "Sample is a portion or quantity of biological material that is col
 
 * identifier 1..1 MS
 * identifier ^short = "Sample ID"
-* identifier ^definition = "Unique ID of the sample within a sample collection."
+* identifier ^definition = "Unique ID of the sample usually given by the data provider."
 
 * collection.collectedDateTime ^short = "Sample creation date and time"
-* collection.collectedDateTime ^definition =  "The date and time the sample was created in the form previously described in detailedSampleType. Date/time format must be ISO8601-compliant or partial, for example, YYYY"
+* collection.collectedDateTime ^definition =  "The date and time the sample was created."
 * collection.collectedDateTime 0..1 MS
 
 * type from DetailedSampleTypeVS
 * type 1..1 MS
 * type ^short = "Detailed Sample type"
-* type ^definition = "The type of biological specimen intended for testing diagnostics, disease propagation, treatment, or for research purposes."
+* type ^definition = "The type of biological specimen."
 
 * collection.bodySite.coding obeys SpecimenOntologyInvariant
 * collection.bodySite.coding 0..1 MS 

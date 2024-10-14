@@ -2,11 +2,11 @@ Profile: DiagnosisReport
 Parent: DiagnosticReport
 Id: miabis-diagnosis-report
 Title: "Diagnosis Report"
-Description: "provides information about the diagnosis linked to sample"
+Description: "Diagnosis Report provides information about the diagnosis linked to sample"
 
 * identifier 0..1 MS
-* identifier ^short = "ID of Condition"
-* identifier ^definition = "A unique identifier for the condition."
+* identifier ^short = "ID of Diagnosis Report"
+* identifier ^definition = "A unique identifier for the Diagnosis Report."
 
 * status = #final
 
