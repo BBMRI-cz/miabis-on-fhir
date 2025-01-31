@@ -23,6 +23,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Install Jekyll
+        run: sudo gem install jekyll
 
       - name: Install Sushi
         run:  sudo npm install -g fsh-sushi
