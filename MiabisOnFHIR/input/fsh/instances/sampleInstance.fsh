@@ -10,3 +10,5 @@ Description: "example of a sample instance"
 * subject = Reference(Patient/donorId)
 * note.text = "This is a restriction of sample usage"
 * processing.extension[storageTemperature].valueCodeableConcept = StorageTemperatureCS#RT
+* extension[sampleCollection].valueIdentifier.value = "bbmri:exampleID"
+* extension[sampleCollection].valueIdentifier.system = "https://directory.bbmri-eric.eu/"
