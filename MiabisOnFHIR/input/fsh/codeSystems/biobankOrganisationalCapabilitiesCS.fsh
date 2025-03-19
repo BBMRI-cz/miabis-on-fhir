@@ -8,7 +8,7 @@ Description: "This code system represents the organisational capabilities and se
 *  #ProspectiveCollections "Setting up prospective collections"
 *  #OmicsData "Access to omics data"
 *  #LabAnalysisData "Access to laboratory analysis data"
-*  #ClinicalData "Access to donors'clinical data"
+*  #ClinicalData "Access to donors' clinical data"
 *  #PathologyArchive "Access to pathology archive"
 *  #RadiologyArchive "Access to radiology archive"
 *  #MedicalRegistries "Access to national medical registries"

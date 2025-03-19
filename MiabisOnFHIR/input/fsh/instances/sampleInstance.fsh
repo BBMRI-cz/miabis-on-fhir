@@ -2,7 +2,7 @@ Instance: SampleInstance
 InstanceOf: Sample
 Usage: #example
 Title: "SampleInstance"
-Description: "example of a sample instance"
+Description: "Example instance of a Sample"
 * id = "example"
 * identifier.value = "sampleId"
 * collection.collectedDateTime = "2011-04-05T13:00:00Z"

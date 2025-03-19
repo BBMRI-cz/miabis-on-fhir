@@ -5,4 +5,4 @@ Description: "This Code system defines codes for the source of the sample"
 
 * #Human "Human"
 * #Animal "Animal"
-* #Enviroment "Enviroment"
+* #Environment "Environment"

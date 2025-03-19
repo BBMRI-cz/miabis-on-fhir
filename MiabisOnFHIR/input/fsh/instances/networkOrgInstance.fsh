@@ -2,7 +2,7 @@ Instance: NetworkOrgInstance
 InstanceOf: NetworkOrganization
 Usage: #example
 Title: "NetworkOrgInstance"
-Description: "example of a network organization instance"
+Description: "Example instance of a Network as an Organization"
 * id = "example-network"
 * identifier.value = "networkOrgId"
 * name = "collectionOrgName"

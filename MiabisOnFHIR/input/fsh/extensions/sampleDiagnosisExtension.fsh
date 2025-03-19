@@ -1,7 +1,7 @@
 Extension: SampleDiagnosisExtension
 Id: miabis-sample-diagnosis-extension
 Title: "Sample content diagnosis"
-Description: "The ICD-10 code describing the diagnosis of the sample content, such as whether the sample contains carcinogenic material"
+Description: "The ICD-10 code describing the diagnosis of the Sample content, such as whether the Sample contains carcinogenic material"
 Context: Specimen
 
 * value[x] only code

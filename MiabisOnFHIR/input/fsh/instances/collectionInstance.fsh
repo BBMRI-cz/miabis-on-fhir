@@ -2,7 +2,7 @@ Instance: CollectionInstance
 InstanceOf: Collection 
 Usage: #example
 Title: "CollectionInstance"
-Description: "example of a collection instance"
+Description: "Example instance of a Collection of Samples"
 * id = "example-collection-group"
 * identifier.value = "collectionId"
 * name = "CollectionName"

@@ -3,7 +3,7 @@ Id: miabis-detailed-samply-type-cs
 Title: "DetailedSampleType"
 Description: "Code system for the detailed sample type of a sample"
 * #AmnioticFluid "Amniotic fluid"
-* #AscitesFluid "ascites Fluid"
+* #AscitesFluid "Ascites Fluid"
 * #Bile "Bile"
 * #BodyCavityFluid "Body cavity fluid"
 * #Bone "Bone"

@@ -1,7 +1,7 @@
 CodeSystem: BioprocessingAndAnalyticalCapabilitiesCS
 Id: miabis-bioprocessing-and-analytical-capabilities-cs
 Title: "Bioprocessing and Analytical Capabilities Code System"
-Description: "Code system representing the bioprocessing and analytical services that the biobank can offer to the clients. "
+Description: "Code system representing the bio processing and analytical services that the biobank can offer to the clients."
 
 * #BioChemAnalyses "Biochemical analyses"
 * #Genomics "Genomics"

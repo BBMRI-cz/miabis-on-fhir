@@ -1,7 +1,7 @@
 CodeSystem: StorageTemperatureCS
 Id: miabis-storage-temperature-cs
 Title: "MIABIS Storage Temperature Code System"
-Description: "Code System used to describe the storage temperatur of a sample"
+Description: "Code System used to describe the storage temperature of a sample"
 
 * #RT "Room temperature"
 * #2to10 "between 2 and 10 degrees Celsius"

@@ -1,7 +1,7 @@
 Extension: SampleCollectionExtension
 Id: miabis-sample-collection-extension
 Title: "Sample Collection"
-Description: "Allows referencing specimen to a Collection using an identifier instead of a direct reference."
+Description: "Allows linking a Sample to a Sample Collection using an identifier instead of a direct FHIR reference."
 Context: Specimen
 
 * valueIdentifier 1..1

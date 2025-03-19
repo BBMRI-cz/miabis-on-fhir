@@ -2,7 +2,7 @@ Instance: NetworkInstance
 InstanceOf: Network
 Usage: #example
 Title: "NetworkInstance"
-Description: "example of a network instance"
+Description: "Example instance of a Network"
 
 * identifier.value = "networkId"
 * name = "networkName"

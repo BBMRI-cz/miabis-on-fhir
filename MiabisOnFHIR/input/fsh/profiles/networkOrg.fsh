@@ -2,7 +2,7 @@ Profile: NetworkOrganization
 Parent: Organization
 Id: miabis-network-organization
 Title: "Network Organization"
-Description: "Network Organization represent a formal part of a network member, like ist name, contact information, url, etc."
+Description: "Network Organization represent a formal part of a Network, like ist name, contact information, url, etc."
 
 * identifier 1..1 MS
 * identifier ^short = "ID of the network."
