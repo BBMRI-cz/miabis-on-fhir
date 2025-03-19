@@ -89,12 +89,12 @@ menu:
 # contact directly and follow the format outlined in the ImplementationGuide resource and
 # ContactDetail.
 #
- contact:
-   - name: Radovan Tomasik
-     telecom:
-       - system: email # phone | fax | email | pager | url | sms | other
-         value: radovan.tomasik@bbmri-eric.eu
-         use: work
+contact:
+ - name: Radovan Tomasik
+   telecom:
+     - system: email # phone | fax | email | pager | url | sms | other
+       value: radovan.tomasik@bbmri-eric.eu
+       use: work
 #
 #
 # The global property corresponds to the IG.global property, but it
