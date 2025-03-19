@@ -1,64 +1,162 @@
+/* =============================
+   General Styles
+   ============================= */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333; /* Dark gray for readability */
+    background-color: #f8f9fa; /* Light gray background for contrast */
+}
+
+/* =============================
+   Footer & Breadcrumbs
+   ============================= */
 #segment-footer > .container {
-  background-color: #6F8795;
+    background-color: #002060; /* BBMRI-ERIC Blue */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
 }
 
 #segment-breadcrumb {
-color: #6F8795;
+    color: #002060;
+    font-weight: bold;
 }
 
+/* =============================
+   Navbar Customization
+   ============================= */
 .navbar-inverse {
-  background-color: #0824de;
-color: #e36108;
+    background-color: #002060;
+    color: #ffffff;
+}
 
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: #0824de;
+    background-color: #001540;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #0824de;
-color:
-    #ffffff;
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #001540;
+    color: #ffffff;
 }
 
+/* =============================
+   Tabs & Dropdowns
+   ============================= */
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  color: #939fad;
+    color: #002060;
+    font-weight: bold;
 }
 
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-background-image: linear-gradient(to bottom, #304757 0%, #304757 100%);
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-image: linear-gradient(to bottom, #002060 0%, #001540 100%);
+    color: #ffffff;
 }
 
+/* =============================
+   Buttons
+   ============================= */
+.btn-primary {
+    background-color: #002060;
+    border-color: #001540;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #001540;
+    border-color: #000d30;
+}
+
+.btn-secondary {
+    background-color: #939fad;
+    border-color: #6f8795;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #6f8795;
+    border-color: #4f6775;
+}
+
+/* =============================
+   FHIR Implementation Guide Styles
+   ============================= */
+
+/* Headers for FHIR Profiles & Sections */
+h1, h2, h3 {
+    color: #002060;
+    font-weight: bold;
+}
+
+/* FHIR Resource Tables */
+table.fhir-resource {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+table.fhir-resource th {
+    background-color: #002060;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+table.fhir-resource td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Code Blocks */
+pre, code {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+/* =============================
+   Other Custom Elements
+   ============================= */
 #ig-status {
     margin-top: 20px;
     line-height: 25px;
-    color: #e36108;
+    color: #002060;
     text-align: center;
 }
 
 #buffer {
- width: 205px;
-height: 80px;
-  float: right;
-  margin-top: 16px;
+    width: 205px;
+    height: 80px;
+    float: right;
+    margin-top: 16px;
 }
 
-#gba-nav {
-  width: 205px;
-  line-height: 50px;
-  float: left;
-  margin-top: 16px;
-  color: #e36108;
+#bbmri-nav {
+    width: 205px;
+    line-height: 50px;
+    float: left;
+    margin-top: 16px;
+    color: #002060;
 }
-#gba-nav a {
-  color: inherit;
+
+#bbmri-nav a {
+    color: inherit;
 }
-#gba-logo {
-  float: left;
-  margin-left: 6px;
-  margin-right: 6px;
-  margin-bottom: 8px;
+
+#bbmri-logo {
+    float: left;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 8px;
 }
