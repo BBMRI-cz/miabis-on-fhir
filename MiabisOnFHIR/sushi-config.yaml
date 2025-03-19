@@ -18,7 +18,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 publisher:
   name: BBMRI-ERIC
   url: http://bbmri-eric.eu
-  # email: test@example.org
+  email: contact@bbmri-eric.eu
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -89,12 +89,12 @@ menu:
 # contact directly and follow the format outlined in the ImplementationGuide resource and
 # ContactDetail.
 #
-# contact:
-#   - name: Bob Smith
-#     telecom:
-#       - system: email # phone | fax | email | pager | url | sms | other
-#         value: bobsmith@example.org
-#         use: work
+ contact:
+   - name: Radovan Tomasik
+     telecom:
+       - system: email # phone | fax | email | pager | url | sms | other
+         value: radovan.tomasik@bbmri-eric.eu
+         use: work
 #
 #
 # The global property corresponds to the IG.global property, but it

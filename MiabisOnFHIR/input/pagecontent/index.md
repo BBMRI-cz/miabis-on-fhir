@@ -25,7 +25,8 @@ Implementers must conform to:
 3. Follow the implementation **best practices** outlined in this guide.
 
 ## Contact & Feedback
-For contributions, feedback, or support, please contact the MIABIS on FHIR team via [GitHub](https://github.com/your-repo) or email at support@example.com.
+For contributions, feedback, or support, please contact the MIABIS on FHIR team via [GitHub](https://github.com/BBMRI-cz/miabis-on-fhir)
+or using the contact details on this page.
 
 ---
 **Version:** 1.0.0 | **FHIR Version:** R4/R5 | **Status:** Draft
