@@ -3,7 +3,7 @@ InstanceOf: NetworkOrganization
 Usage: #example
 Title: "NetworkOrgInstance"
 Description: "example of a network organization instance"
-
+* id = "example-network"
 * identifier.value = "networkOrgId"
 * name = "collectionOrgName"
 * alias = "collectionOrgAlias"
@@ -15,7 +15,7 @@ Description: "example of a network organization instance"
 * contact[=].telecom[=].value = "contactEmail"
 
 * address[+].country = "CZ"
-* partOf = Reference(Organization/biobankId)
+* partOf = Reference(Organization/example-biobank)
 * extension[juristicPerson].valueString = "juristicPerson"
 * extension[commonCollaborationTopics].valueCodeableConcept = CommonCollaborationTopicsCS#Charter
 * extension[description].valueString = "descriptionExample"

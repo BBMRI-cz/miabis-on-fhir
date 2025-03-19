@@ -3,7 +3,7 @@ InstanceOf: Collection
 Usage: #example
 Title: "CollectionInstance"
 Description: "example of a collection instance"
-
+* id = "example-collection-group"
 * identifier.value = "collectionId"
 * name = "CollectionName"
 * type = #person
@@ -34,11 +34,11 @@ Description: "example of a collection instance"
 * characteristic[diagnosis].exclude = false
 * characteristic[diagnosis].valueCodeableConcept =  http://hl7.org/fhir/sid/icd-10#C50
 
-* managingEntity = Reference(Organization/collectionOrgId)
+* managingEntity = Reference(Organization/example-biobank)
 
 * extension[numberOfSubjects].valueInteger = 100
 * extension[inclusionCriteria].valueCodeableConcept = InclusionCriteriaCS#HealthStatus
-* extension[MemberEntity].valueReference = Reference(Specimen/sampleId)
+* extension[MemberEntity].valueReference = Reference(Specimen/example)
 
 
 

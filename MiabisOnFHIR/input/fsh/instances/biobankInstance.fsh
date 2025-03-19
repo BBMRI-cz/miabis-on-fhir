@@ -3,9 +3,8 @@ InstanceOf: Biobank
 Usage: #example
 Title: "BiobankInstance"
 Description: "Example instance of a Biobank"
-
+* id = "example-biobank"
 * identifier[bbmri-eric-id].value = "biobankId"
-
 * name = "biobankName"
 * alias = "biobankAlias" 
 * contact[+].name.given[+] = "contactName"

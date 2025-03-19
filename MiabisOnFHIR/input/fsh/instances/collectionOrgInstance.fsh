@@ -3,7 +3,7 @@ InstanceOf: CollectionOrganization
 Usage: #example
 Title: "CollectionOrgInstance"
 Description: "Example instance of a Collection Organization"
-
+* id = "example-collection"
 * identifier.value = "collectionOrgId"
 * name = "collectionOrgName"
 * alias = "collectionOrgAlias"
@@ -16,7 +16,7 @@ Description: "Example instance of a Collection Organization"
 
 * address[+].country = "CZ"
 
-* partOf = Reference(Organization/biobankId)
+* partOf = Reference(Organization/example-biobank)
 
 * extension[datasetType].valueCodeableConcept = CollectionDatasetTypeCS#Genomic
 * extension[sampleSource].valueCodeableConcept = SampleSourceCS#Human

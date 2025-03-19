@@ -9,5 +9,5 @@ Description: "example of a network instance"
 * type = #person
 * active = true
 * actual = true
-* managingEntity = Reference(Organization/networkOrgId)
-* extension[MemberEntity].valueReference = Reference(Collection/collectionId)
+* managingEntity = Reference(Organization/example-network)
+* extension[MemberEntity].valueReference = Reference(Collection/example_-ollection)
