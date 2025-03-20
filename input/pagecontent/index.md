@@ -11,14 +11,13 @@ By leveraging the **FHIR ecosystem**, we facilitate system-wide interoperability
 ### Why MIABIS on FHIR?
 - **Interoperability** – Enables seamless data exchange between biobanks and healthcare/research infrastructures.
 - **Scalability** – Supports federated implementations across multiple institutions and networks.
-- **Standard Compliance** – Aligns with widely accepted standards such as [FHIR](https://hl7.org/fhir/), [BBMRI-ERIC MIABIS](https://github.com/BBMRI-ERIC/miabis), and global health data models.
+- **Standard Compliance** – Aligns with widely accepted standards such as [FHIR](https://hl7.org/fhir/) and [BBMRI-ERIC MIABIS](https://github.com/BBMRI-ERIC/miabis).
 - **Machine-Readable Format** – Provides structured, computable representations for automated processing.
 
 ### Key Features
 - **FHIR Profiles for Biobank Data** – Structured resources for describing biobank, sample, donor, and dataset metadata.
 - **Extensibility** – Base profiles can be adapted to specific project needs while maintaining compliance with core standards.
 - **FHIR API Support** – Enables data querying and retrieval using standard FHIR interfaces.
-- **Integration with Existing Infrastructure** – Can be linked with healthcare, research, and federated data networks.
 
 ### Getting Started
 To begin using MIABIS on FHIR, explore the following resources:
