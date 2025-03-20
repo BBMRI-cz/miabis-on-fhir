@@ -36,7 +36,7 @@ that publishes the Implementation Guide on.
 ## Build the IG
 To build the Project, run the following command:
 ```bash
-   sushi build
+sushi build
 ```
 
 ## Validate the IG
