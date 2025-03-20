@@ -1,7 +1,19 @@
 # MIABIS on FHIR
 
-FHIR representation of MIABIS (Minimum Information About BIobank Data Sharing)
+FHIR representation of[ MIABIS (Minimum Information About BIobank Data Sharing)](https://miabis.bbmri-eric.eu).
+## Goal
+The Goal of this project is to provide guidance and all necessary information for adopting the MIABIS on FHIR profiles.
 
+## Availability
+The implementation guide is available through GitHub Pages [here](https://bbmri-cz.github.io/miabis-on-fhir/),
+as well as on the [Simplifier](https://simplifier.net/miabis).
+## State
+MIABIS on FHIR has been marked active and ready for production use with its **1.0.0 release**.
+It is currently being adopted by the [BBMRI-ERIC Federated Search platform](https://www.bbmri-eric.eu/bbmri-sample-and-data-portal/).
+A reference usage of the project can be found in an [ETL tool](https://github.com/BBMRI-cz/fhir-module)
+used by BBMRI.cz.
+> [!NOTE]  
+> To help with adoption, we have developed a Python library which can be found [here](https://pypi.org/project/MIABIS-on-FHIR).
 ## Overview
 
 This repository provides the source code for the MIABIS (Minimum Information About BIobank Data Sharing) on FHIR Implementation Guide
@@ -18,7 +30,7 @@ To generate the necessary JSON files for uploading to Simplifier, the user needs
 For installation instructions,
 see [here](https://github.com/FHIR/sushi?tab=readme-ov-file#installation-for-sushi-users).
 This project also has an automated CI pipeline
-that publishes the Implementation Guide on https://bbmri-cz.github.io/miabis-on-fhir/.
+that publishes the Implementation Guide on.
 
 
 ## Build the IG
@@ -35,3 +47,6 @@ To validate the example instances, move your generated *instance.json files to a
 ```bash
 java -jar validator_cli.jar -ig {fsh_generated_resources} -version 4.0.1 -extension http://example/org/ -allow-example-urls true {instances}
 ```
+## Running the Publisher
+> [!WARNING]  
+> Dependencies
