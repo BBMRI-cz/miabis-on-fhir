@@ -78,7 +78,7 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
   FAQ: faq.html
-
+  Release Notes: new-tab https://github.com/BBMRI-cz/miabis-on-fhir/releases
 
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
