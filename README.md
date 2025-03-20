@@ -1,3 +1,4 @@
+[![CI](https://github.com/BBMRI-cz/miabis-on-fhir/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/BBMRI-cz/miabis-on-fhir/actions/workflows/ci.yml)
 # MIABIS on FHIR
 
 FHIR representation of[ MIABIS (Minimum Information About BIobank Data Sharing)](https://miabis.bbmri-eric.eu).
