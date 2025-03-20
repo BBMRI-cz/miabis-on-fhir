@@ -49,5 +49,15 @@ To validate the example instances, move your generated *instance.json files to a
 java -jar validator_cli.jar -ig {fsh_generated_resources} -version 4.0.1 -extension http://example/org/ -allow-example-urls true {instances}
 ```
 ## Running the Publisher
+To build HTML content from the IG you need to run the Publisher.
 > [!WARNING]  
-> Dependencies
+> For the Publisher to work correctly, you need to have Java, Ruby and Jekyll installed.
+
+The Publisher can be downloaded by simply running the provided script:
+```shell
+./_updatePublisher.sh
+```
+The page content can be generated using the following command:
+```shell
+java -jar input-cache/publisher.jar -ig ig.ini
+```
