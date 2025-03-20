@@ -156,6 +156,7 @@ pre, code {
 
 #bbmri-logo {
     float: left;
+    transform: scale(0.5);
     margin-left: 6px;
     margin-right: 6px;
     margin-bottom: 8px;
