@@ -17,7 +17,10 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 * name ^short = "Name of the biobank (preferably in English)."
 * alias 0..1 MS
 * alias ^short = "Short name in use for the biobank. If applicable."
-
+* telecom ^short = "Complete http-address for the biobank."
+* telecom.system = #url
+* telecom.value 0..1 MS
+* telecom.value ^short = "URL of the biobank."
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
 * contact.telecom 1..* MS 
