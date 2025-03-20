@@ -34,16 +34,14 @@ jobs:
       
       
       - name: Build resources using Sushi
-        run: |
-          cd MiabisOnFHIR
-          sushi build 
+        run: sushi build
 
       - name: Move sushi output different folder
         run: |
           mkdir sushi-output 
           mkdir sushi-output/instances
           mkdir sushi-output/resources
-          cp -R MiabisOnFHIR/fsh-generated/resources sushi-output
+          cp -R fsh-generated/resources sushi-output
           cd sushi-output/resources
           mv *Instance.json ../instances
 
@@ -57,7 +55,7 @@ jobs:
         run: wget -q https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O publisher.jar
 
       - name: Run Publisher
-        run: java -jar publisher.jar -ig MiabisOnFHIR/ig.ini
+        run: java -jar publisher.jar -ig ./ig.ini
 
       - name: Setup Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
@@ -65,7 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
-          path: MiabisOnFHIR/output
+          path: ./output
 
       - name: Deploy to GitHub Pages
         id: deployment
