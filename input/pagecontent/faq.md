@@ -1,18 +1,19 @@
-## What are FHIR stores?
+### What are FHIR stores?
 FHIR stores are databases optimized for storing and managing FHIR resources. They provide a RESTful API for creating, reading, updating, and deleting structured healthcare and research data.
 
-## What FHIR store should we use?
+### What FHIR store should we use?
 MIABIS on FHIR profiles are designed to work with any FHIR-compliant store. However, we recommend using the [Blaze FHIR Store](https://samply.github.io/blaze/) due to its performance in federated research environments.
 
-## How do I start implementing MIABIS on FHIR for sharing sample-related data?
+### How do I start implementing MIABIS on FHIR for sharing sample-related data?
 1. Understand your current data model and map it to MIABIS on FHIR profiles.
 2. Set up a FHIR store for storing and querying FHIR resources.
 3. Develop middleware to transform your internal data into FHIR-compatible resources.
 4. Validate your implementation using FHIR validators to check for compliance.
 5. Test interoperability with other systems using standard FHIR operations.
 
-## How can I send MIABIS on FHIR-compatible resources to a FHIR store?
-FHIR stores expose a REST API that allows interaction with FHIR resources using standard HTTP methods. You can use `POST`, `GET`, `PUT`, and `DELETE` to manage data.
+### How can I send MIABIS on FHIR-compatible resources to a FHIR store?
+FHIR stores expose a REST API that allows interaction with FHIR resources using standard HTTP methods.
+You can use _POST_, _GET_, _PUT_ and _DELETE_ to manage data.
 
 **Example:**  
 ```shell
@@ -36,7 +37,7 @@ Authorization: Bearer <access_token>
 }
 ```
 
-## How do I validate that my data conforms to MIABIS on FHIR profiles?
+### How do I validate that my data conforms to MIABIS on FHIR profiles?
 You can use FHIR validation tools like:
 - **FHIR Validator** ([Validation Guide](https://hl7.org/fhir/validation.html))
 - **Simplifier.net FHIR validation** ([Simplifier.net](https://simplifier.net))
@@ -47,7 +48,7 @@ You can use FHIR validation tools like:
 java -jar fhir-validator.jar -input file:/path/to/your/resource-file.json
 ```
 
-## How can I convert my existing data to FHIR?
+### How can I convert my existing data to FHIR?
 1. Extract relevant data from your database.
 2. Map fields to the appropriate FHIR resources and attributes.
 3. Use a transformation tool (e.g., Python scripts, ETL pipelines, or FHIR libraries).
@@ -134,10 +135,10 @@ Would map to:
 ```
 More examples for individual Resources can be found on pages for respective profiles.
 
-## What if my data contains attributes not covered by MIABIS?
+### What if my data contains attributes not covered by MIABIS?
 FHIR allows extensions to represent additional data while maintaining compatibility with standard profiles. If your data includes fields not covered by MIABIS, consider using **FHIR extensions** or **custom profiles** to capture the missing attributes.
 
-## How can I query data from a FHIR store?
+### How can I query data from a FHIR store?
 FHIR supports various search parameters that allow querying data efficiently. You can filter based on specific attributes, retrieve linked resources, and apply advanced query mechanisms.
 
 **Example Query:**  
@@ -148,13 +149,13 @@ Authorization: Bearer <access_token>
 
 ```
 
-## What tools can help with MIABIS on FHIR adoption?
+### What tools can help with MIABIS on FHIR adoption?
 - **FHIR Validator** for checking compliance
 - **Blaze FHIR Store** for hosting data
 - **Postman or cURL** for testing API interactions
 - **Simplifier.net** for managing and validating FHIR resources
 
-## What is CQL and how is it used in the context of MIABIS on FHIR?
+### What is CQL and how is it used in the context of MIABIS on FHIR?
 
 CQL (Clinical Quality Language) is a standardized, human-readable language designed to express clinical logic and quality measures. In the context of MIABIS on FHIR, CQL can be used to define rules for the interpretation and validation of data within biobank resources.
 
@@ -167,7 +168,7 @@ In MIABIS on FHIR, CQL can help automate the validation of FHIR-based biobank da
 For more information on CQL and how to implement it, refer to [FHIR CQL Documentation](https://cql.hl7.org/).
 
 
-## Where can I get support?
+### Where can I get support?
 For questions, feedback, or technical assistance, you can:
 - Open an issue on [GitHub](https://github.com/BBMRI-cz/miabis-on-fhir)
 - Join the [FHIR Community Chat](https://chat.fhir.org/)
