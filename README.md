@@ -21,7 +21,6 @@ This repository provides the source code for the MIABIS (Minimum Information Abo
 It works with [SUSHI (SUSHI Unshortens Short Hand Inputs)](https://github.com/FHIR/sushi),
 which serves as an interpreter for [FSH (FHIR Shorthand)](https://hl7.org/fhir/uv/shorthand/reference.html).
 This allows the creation of FHIR profiles using FSH, which simplifies the process of developing and maintaining FHIR profiles.
-These profiles are then uploaded to the [Simplifier](https://simplifier.net/).
 
 ## Usage
 
@@ -41,7 +40,8 @@ To build the Project, run the following command:
 
 ## Validate the IG
 If the build is successful, the generated files will be located in the **_fsh-generated_** folder.
-To validate the instances/examples based on this Implementation Guide (IG), download the FHIR Validator.
+To validate the instances/examples based on this Implementation Guide (IG),
+download the [FHIR Validator](https://github.com/hapifhir/org.hl7.fhir.core/releases).
 To validate the example instances, move your generated *instance.json files to a separate folder and run the following command:
 
 ```bash
