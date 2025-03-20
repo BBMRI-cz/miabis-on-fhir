@@ -42,4 +42,5 @@ We welcome collaboration and feedback to further improve the MIABIS on FHIR fram
 
 ---  
 **Version:** 1.0.0 | **FHIR Version:** R4/R5 | **Status:** Draft  
+[![GitHub](https://img.shields.io/badge/GitHub-MIABIS--on--FHIR-blue?logo=github)](https://github.com/BBMRI-cz/miabis-on-fhir)
 

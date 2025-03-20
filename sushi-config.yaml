@@ -5,6 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: fhir.example
 canonical: https://fhir.bbmri-eric.eu
+url: https://fhir.miabis.bbmri-eric.eu
 name: MiabisOnFHIR
 title: MIABIS on FHIR Implementation Guide
 description: Implementation Guide for adopting MIABIS on FHIR
