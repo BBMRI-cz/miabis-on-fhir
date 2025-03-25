@@ -3,7 +3,8 @@ Welcome to the **MIABIS on FHIR Implementation Guide (IG)**.
 This guide defines a FHIR-based representation of the *Minimum Information About BIobank data Sharing (MIABIS)* standard, providing a structured framework for biobank data interoperability.
 
 MIABIS defines a common data model for biobank metadata, enabling biobanks, cohorts, and biomolecular resources to share structured information about their collections. By adopting **FHIR (Fast Healthcare Interoperability Resources)** as the underlying standard, we ensure seamless integration with existing healthcare and research infrastructures.
-
+Figure below depicts the mapping of MIABIS entities to FHIR resources. This IG uses 6 different FHIR resources in 9 distinct FHIR profiles constraining their usage for accurate representation of MIABIS.
+![MIABIS on FHIR Model](miabis_to_fhir_mapping.png)
 ### Purpose
 This framework offers a practical, machine-actionable representation of MIABIS, enabling standardized sharing of sample-related data across diverse applications and systems.  
 By leveraging the **FHIR ecosystem**, we facilitate system-wide interoperability while promoting **FAIR** (Findable, Accessible, Interoperable, and Reusable) data principles.
