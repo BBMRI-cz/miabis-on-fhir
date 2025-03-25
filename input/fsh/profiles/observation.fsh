@@ -2,7 +2,7 @@ Profile: MiabisObservation
 Parent: Observation
 Id: miabis-observation
 Title: "Observation"
-Description: "Observation containing ICD-10 code of diagnosis"
+Description: "Observation containing an ICD-10/9 code of a diagnosis linked to a specific Sample"
 
 * identifier 0..1 MS
 * identifier ^short = "ID of the observation."
