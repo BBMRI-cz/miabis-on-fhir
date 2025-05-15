@@ -24,7 +24,6 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
 * contact.telecom 1..* MS 
-
 * telecom 0..1 MS
 * telecom ^short = "Complete http-address for the biobank."
 * telecom.system = #url
@@ -38,17 +37,20 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 * address.country 1..1 MS
 * address.country ^short = "Country of the biobank."
 
+* partOf 1..1 MS 
+* partOf ^short = "Juristic person for the biobank"
+* partOf ^definition = "Juristic person for the biobank"
+* partOf only Reference(JuristicPerson)
+
 * extension contains
     InfrastructuralCapabilitiesExtension named infrastructuralCapabilities 0..* MS and
     OrganisationalCapabilitiesExtension named organisationalCapabilities 0..* MS and
     BioprocessingAndAnalyticalCapabilitiesExtension named bioprocessingAndAnalyticalCapabilities 0..* MS and
     QualityManagementStandardExtension named qualityManagementStandard 0..* MS and
-    JuristicPersonExtension named juristicPerson 0..1 MS and
     OrganizationDescriptionExtension named description 0..1 MS
 
 * extension[infrastructuralCapabilities] ^short = "The technical infrastructural capabilities that the biobank can offer to the clients."
 * extension[organisationalCapabilities] ^short = "The organisational capabilities and services that the biobank can provide to support clients."
 * extension[bioprocessingAndAnalyticalCapabilities] ^short = "The bioprocessing and analytical services that the biobank can offer to the clients."
 * extension[qualityManagementStandard] ^short = "The standards that the biobank is certified or accredited for."
-* extension[juristicPerson] ^short = "The legal entity that is responsible for the biobank."
 * extension[description] ^short = "Description of the biobank in English."

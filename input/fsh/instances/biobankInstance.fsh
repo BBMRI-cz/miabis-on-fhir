@@ -13,13 +13,12 @@ Description: "Example instance of a Biobank"
 * contact[=].name.family = "contactFamilyName"
 * contact[=].telecom[+].system = #email
 * contact[=].telecom[=].value = "contactEmail"
-
+* partOf = Reference(Organization/example-juristic-person)
 * contact[=].telecom.system = #phone
 * address[+].country = "CZ"
 * extension[infrastructuralCapabilities].valueCodeableConcept = InfrastructuralCapabilitiesCS#SampleStorage
 * extension[organisationalCapabilities].valueCodeableConcept = OrganisationalCapabilitiesCS#Other
 * extension[bioprocessingAndAnalyticalCapabilities].valueCodeableConcept = BioprocessingAndAnalyticalCapabilitiesCS#Other
 * extension[qualityManagementStandard].valueString = "ISO 9001"
-* extension[juristicPerson].valueString = "juristicPerson"
 * extension[description].valueString = "descriptionExample"
 
