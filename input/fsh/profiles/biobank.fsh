@@ -40,7 +40,7 @@ Description: "This profile represents a Biobank, which is defined as an entity t
 * partOf 1..1 MS 
 * partOf ^short = "Juristic person for the biobank"
 * partOf ^definition = "Juristic person for the biobank"
-* partOf only Reference(JuristicPerson)
+
 
 * extension contains
     InfrastructuralCapabilitiesExtension named infrastructuralCapabilities 0..* MS and

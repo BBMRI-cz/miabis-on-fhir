@@ -31,7 +31,6 @@ Description: "Network Organization represent a formal part of a Network, like is
 * address.country ^definition = "The country of the network."
 
 * partOf 1..1 MS 
-* partOf only Reference(JuristicPerson)
 * partOf ^short = "The juristic person responsible for network"
  
 * extension contains 
