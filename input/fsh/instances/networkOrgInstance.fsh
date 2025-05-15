@@ -15,8 +15,7 @@ Description: "Example instance of a Network as an Organization"
 * contact[=].telecom[=].value = "contactEmail"
 
 * address[+].country = "CZ"
-* partOf = Reference(Organization/example-biobank)
-* extension[juristicPerson].valueString = "juristicPerson"
+* partOf = Reference(Organization/example-juristic-person)
 * extension[commonCollaborationTopics].valueCodeableConcept = CommonCollaborationTopicsCS#Charter
 * extension[description].valueString = "descriptionExample"
 

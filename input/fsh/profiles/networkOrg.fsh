@@ -21,7 +21,7 @@ Description: "Network Organization represent a formal part of a Network, like is
 
 * contact.name.family 1..1 MS
 * contact.name.given 1..* MS
-* contact.telecom 1..* 
+* contact.telecom 1..*  
 
 * address 1..1 MS
 * address ^short = "Address of the network."
@@ -31,14 +31,11 @@ Description: "Network Organization represent a formal part of a Network, like is
 * address.country ^definition = "The country of the network."
 
 * partOf 1..1 MS 
-* partOf only Reference(Biobank)
-* partOf ^short = "The organization that the collection is part of."
+* partOf ^short = "The juristic person responsible for network"
  
 * extension contains 
-    JuristicPersonExtension named juristicPerson 1..1 MS and
     CommonCollaborationTopicsExtension named commonCollaborationTopics 0..* MS and
     OrganizationDescriptionExtension named description 0..1 MS
 
-* extension[juristicPerson] ^short = "Juristic person i.e. a university, concern, country council, etc. for the network"
 * extension[commonCollaborationTopics] ^short = "Common collaboration topics for the network."
 * extension[description] ^short = "Description of the network in English."
