@@ -73,10 +73,11 @@ jobs:
           ZIP_NAME="${{ github.event.repository.name }}-${{ github.event.release.tag_name }}-simplifier.zip"
           zip -r "$ZIP_NAME" output
 
-      - name: Upload ZIP to GitHub Release
+      - name: Upload Simplifier package to GitHub Release
         if: github.event_name == 'release'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          ZIP_NAME="${{ github.event.repository.name }}-${{ github.event.release.tag_name }}-simplifier.zip"
-          gh release upload "${{ github.event.release.tag_name }}" "$ZIP_NAME" --clobber
+          PKG_NAME="${{ github.event.repository.name }}-${{ github.event.release.tag_name }}.tgz"
+          cp output/package.tgz "$PKG_NAME"
+          gh release upload "${{ github.event.release.tag_name }}" "$PKG_NAME" --clobber
