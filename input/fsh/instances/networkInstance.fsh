@@ -10,4 +10,4 @@ Description: "Example instance of a Network"
 * active = true
 * actual = true
 * managingEntity = Reference(Organization/example-network)
-* extension[MemberEntity].valueReference = Reference(Collection/example_-ollection)
+* extension[MemberEntity].valueReference = Reference(Organization/example-biobank)

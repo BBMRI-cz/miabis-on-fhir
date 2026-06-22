@@ -62,7 +62,7 @@ Description: "Collection represents a set of samples and/or data items collected
 * extension contains 
     NumberOfSubjectsExtension named numberOfSubjects 0..1 MS and
     InclusionCriteriaExtension named inclusionCriteria 0..* MS and
-    http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.member.entity named MemberEntity 0..* MS
+    MemberEntityExtension named MemberEntity 0..* MS
 
 * extension[MemberEntity].value[x] only Reference(Specimen)
 

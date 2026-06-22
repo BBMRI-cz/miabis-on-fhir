@@ -10,8 +10,8 @@ Usage: #definition
 * code = #groupMember
 * base = #Group
 * type = #reference
-// * expression = "Group.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.member.entity').valueReference.where(reference.startsWith('Specimen/'))"
-* expression = "Group.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.member.entity').value"
+// * expression = "Group.extension.where(url='https://fhir.bbmri-eric.eu/StructureDefinition/miabis-member-entity-extension').valueReference.where(reference.startsWith('Specimen/'))"
+* expression = "Group.extension('https://fhir.bbmri-eric.eu/StructureDefinition/miabis-member-entity-extension').value"
 * target[+] = #Specimen
 * target[+] = #Group
 * target[+] = #Organization
