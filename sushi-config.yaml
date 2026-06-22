@@ -10,7 +10,7 @@ name: MiabisOnFHIR
 title: MIABIS on FHIR Implementation Guide
 description: Implementation Guide for adopting MIABIS on FHIR
 status: active # draft | active | retired | unknown
-version: 1.0.0
+version: 1.3.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: CI Build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
